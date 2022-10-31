@@ -1,0 +1,99 @@
+.navbar {
+  background: #20c5ba;
+  color: white;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
+  z-index: 1000;
+  padding: 10px 40px;
+  justify-content: space-between;
+  position: fixed;
+  width: 100vw;
+  /* isolation: isolate; */
+  font-size: smaller;
+}
+.hover:hover
+{
+  color: #024b46;
+
+}
+.selected
+{
+  color: #024b46;
+
+}
+.navbar-overlay {
+  top: 67px;
+  height: 100vh;
+  display: none;
+  right: 0px;
+  width: 100%;
+  position: fixed;
+  background:rgba(37, 73, 71, 0.08);
+}
+
+.navbar-toggler {
+  display: none;
+}
+.navbar-brand
+{
+  max-width: 100px;
+  max-height: 40px;
+}
+.navbar-brand >img
+{
+  height: 45px;
+}
+.navbar-nav {
+  transition: left 350ms ease-in;
+  z-index: 3;
+  gap: 1rem;
+}
+.nav-item {
+  padding: 2px 4px;
+  text-align: center;
+}
+.nav-link {
+  transition: all 0.3s;
+  
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-link {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 940px) {
+  .navbar-overlay,
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-nav {
+    position: fixed;
+    flex-direction: column;
+    padding: 20px 0px;
+    left: -102%;
+    gap: 3rem;
+    width: 100vw;
+   background-color: #fff;
+  color: #024b46;
+    height: 100vh;
+    top: 67px;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width:none  !important;
+    /* overflow-y: auto; */
+    overflow-y: scroll;
+
+  }
+  .navbar-nav::-webkit-scrollbar {
+    display: none;
+  }
+  .active.navbar-nav {
+    left: 0%;
+  }
+  .nav-link {
+    font-size: 15px;
+    
+  }
+}
