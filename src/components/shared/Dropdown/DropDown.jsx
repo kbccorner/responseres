@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import engarticals from "../../../db/engdb/engarticals";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 import "./dropdown.css";
 function DropDown(prop) {
@@ -22,20 +22,20 @@ function DropDown(prop) {
         {title}
         <i className={`fa fa-angle-down  ${(toggleId === id)&&"chosen" }`}></i>
       </div>
-      {toggleId === id && (<motion.div
-          initial={{y: isOpen? 0 :-1500,
-            x: isOpen? -1000 :0
+      <AnimatePresence>
 
-          
-          }}
-       animate={{ y:0,
-        x:0
-       }}
-       transition={{
-         type: "spring",
-         stiffness: 200,
-         damping: 50
-       }}
+
+     
+      {toggleId === id && (<motion.div
+        key="ew"
+        initial={{ scaleY: 0, opacity: 0 }}
+        animate={{ scaleY: 1, opacity: 1 }}
+        exit={{ scaleY: 0, transition: { duration: 0.5 } }}
+        transition={{
+          type: "easeOut",
+
+          duration: 0.7,
+        }}
        className="dropdown-main"
       
       
@@ -98,6 +98,7 @@ function DropDown(prop) {
         </motion.div>
         
       )}
+       </AnimatePresence>
     </li>
   );
 }

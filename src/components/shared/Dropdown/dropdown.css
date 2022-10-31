@@ -13,6 +13,7 @@
 .dropdown-main
 {
   display: flex;
+  transform-origin: top;
   
   justify-content: space-between;
   background: #eef2f7 ;
@@ -21,7 +22,7 @@
  height: fit-content;
 
  position: absolute;
- top: 50px;
+ top: 60px;
  left: 0px;
 }
 .dropdown-menu {
