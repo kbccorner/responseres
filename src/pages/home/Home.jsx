@@ -45,8 +45,8 @@ function Home() {
       </motion.div>
       
       <section className="coleghome">
-        <div className="partysvg">
-          <div className="coleg-tit">الاختصاصات</div>
+        <div className="container-major">
+        <div className="coleg-tit">الاختصاصات</div>
           <div className="colleg">
             {datalist.map((la, index) => {
               return (
@@ -68,6 +68,7 @@ function Home() {
             })}
           </div>
         </div>
+        
       </section>
       <ul className="anthersection">
         <div className="coleg-tit">الجامعات السورية الحكومية و الخاصة</div>
