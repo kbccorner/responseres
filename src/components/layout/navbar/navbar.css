@@ -27,7 +27,7 @@
   right: 0px;
   width: 100%;
   position: fixed;
-  background:rgba(37, 73, 71, 0.08);
+  background:rgba(0, 0, 0, 0.3);
 }
 
 .navbar-toggler {
@@ -71,7 +71,7 @@
     position: fixed;
     flex-direction: column;
     padding: 20px 0px;
-    left: -102%;
+    left: -150%;
     gap: 3rem;
     width: 100vw;
    background-color: #fff;
@@ -90,7 +90,7 @@
     display: none;
   }
   .active.navbar-nav {
-    left: 0%;
+    left: -10%;
   }
   .nav-link {
     font-size: 15px;
