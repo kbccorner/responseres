@@ -1,8 +1,8 @@
 .welcome-head {
   height: calc(100vh - 55px);
-  /* background: linear-gradient(0deg, #ffe45ee8, #ffe45e00) ;*/
+  background:#20c5ba;
 
-  background-size: cover;
+  // background-size: contain;
  
   display: flex;
   align-items: center;
@@ -10,9 +10,9 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
-  background-position:0  2732px;
-  background-repeat: repeat-y;
-  animation:bg 60s linear infinite  ;
+  isolation: isolate;
+ 
+ 
 
   h1 {
     font-size: 50px;
@@ -21,18 +21,14 @@
   h5 {
     margin-top: 20px;
   }
+ 
+ 
+ 
+.fa {
+  color:  #00a09c;
+  z-index: -1;
+ position: absolute;
+  font-size: 60px;
 }
-@keyframes bg {
-  100%{
-    background-position: 0 0;
-}
-}
-.icon-list {
-  margin-top: 150px;
-}
-.icon-list i {
-  background:  hsl(189, 71%, 45%);
-  margin: 0px 20px;
-  padding: 0px 10px;
-  font-size: 20px;
+ 
 }

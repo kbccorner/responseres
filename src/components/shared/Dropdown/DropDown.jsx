@@ -7,7 +7,7 @@ function DropDown(prop) {
   // window.addEventListener('mousemove',(e)=>{
   //     console.log(e.target);
   // })
-  const { title, setToggle, list, toggleId, id,isOpen } = prop;
+  const { title, setToggle, list,route, toggleId, id,isOpen } = prop;
   const followChange = () => {
     toggleId === id ? setToggle(-1) : setToggle(id);
   };
@@ -45,7 +45,7 @@ function DropDown(prop) {
           {list.map((la) => {
             return (
               <li key={la.name}>
-                <Link className="dropdown-item" to={la.to}>
+                <Link className="dropdown-item" to={route + la.to}>
                   <i className="fa fa-archway icon"></i> 
                   <div >
                     <p>

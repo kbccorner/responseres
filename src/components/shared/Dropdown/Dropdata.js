@@ -1,16 +1,18 @@
 const datalist = [
   {
     title: "الكليات الهندسية",
+    mroute:'/eng',
     list: [
      
-      { to: "/", name: "الهندسة المعلوماتية" },
-      { to: "/", name: "الهندسة المدنية" },
-      { to: "/", name: "الهندسة المعمارية" },
-      { to: "/", name: "هندسة الكهرباء والالكترون" },
+      { to: "/ite", name: "الهندسة المعلوماتية" },
+      { to: "/civil", name: "الهندسة المدنية" },
+      { to: "/arch", name: "الهندسة المعمارية" },
+      { to: "/elect", name: "هندسة الكهرباء والالكترون" },
     ],
   },
   {
     title: "الجامعة الافتراضية",
+    mroute:'/vir',
     list: [
      
       { to: "/", name: " المعهد التقاني الحاسوبي" },
@@ -27,6 +29,7 @@ const datalist = [
   },
   {
     title: "التعليم المفتوح",
+    mroute:'/open',
     list: [
      
       { to: "/", name: " ترجمة انكلش" },
@@ -37,6 +40,7 @@ const datalist = [
   },
   {
     title: "الكليات العلمية",
+    mroute:'/scie',
     list: [
       { to: "/", name: "العلوم الطبيعية" },
       { to: "/", name: "الفيزياء" },
@@ -46,6 +50,7 @@ const datalist = [
   },
   {
     title: "الكليات الطبية",
+    mroute:'/medical',
     list: [
       { to: "/", name: "البشري" },
       { to: "/", name: "الاسنان" },
@@ -54,6 +59,7 @@ const datalist = [
   },
   {
     title: "الكليات الادبية",
+    mroute:'/liter',
     list: [
       { to: "/", name: "الادب العربي" },
       { to: "/", name: "الادب الانكليزي" },
@@ -63,6 +69,7 @@ const datalist = [
   },
   {
     title: "المعاهد",
+    mroute:'/inst',
     list: [
       { to: "/", name: "التقاني الهندسي" },
       { to: "/", name: "التقاني الطبي" },

@@ -6,12 +6,12 @@ function WelcomeSection({title,desc}) {
 
       <h5>{desc}</h5>
 
-      <div className="icon-list">
-        <i className="fa  fa-code"></i>
-        <i className="fa fa-laptop-code"></i>
-        <i className="fa fa-code-branch"></i>
-        <i className="fa fa-brain"></i>
-      </div>
+   
+        <i className="fa  fa-code" style={{top:'40%',left:'10%'}}></i>
+        <i className="fa fa-laptop-code"  style={{top:'20%',left:'60%'}} ></i>
+        <i className="fa fa-code-branch" style={{top:'80%',left:'30%'}}></i>
+        <i className="fa fa-brain" style={{top:'70%',left:'80%'}}></i>
+      
        
 
     </section> 

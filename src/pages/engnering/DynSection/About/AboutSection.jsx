@@ -14,7 +14,7 @@ import g2 from "@/assets/Engineering/It/mainbackground.jpg";
 function AboutSection() {
   return (
     <section className="about-collage">
-      <div className="container">
+      <div className="about-container">
         <h3 className="title">
           <i className="fa-solid fa-lightbulb"></i> نبذة عن الكلية
         </h3>

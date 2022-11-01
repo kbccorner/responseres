@@ -1,9 +1,13 @@
 
- 
+ .about-collage{
+  /* height: 100%; */
+
+
+ }
 .about-collage .title {
   /* color: #ffe45e; */
   color: #f8d523;
-  margin: 50px 0px;
+  padding: 50px 0px;
 }
 .about-collage .parag {
   color: #efefef;

@@ -34,6 +34,7 @@ function Navbar() {
             <DropDown
               key={drop.title}
               id={index}
+              route={drop.mroute}
               setToggle={setToggle}
               toggleId={toggle}
               title={drop.title}
