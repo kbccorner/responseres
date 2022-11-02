@@ -1,18 +1,18 @@
 .welcome-head {
-  height: calc(100vh - 55px);
-  background:#20c5ba;
+  background: #20c5ba;
+  isolation: isolate;
+  
 
-  // background-size: contain;
- 
+
+ &_container{
   display: flex;
   align-items: center;
   text-align: center;
+  height:90vh  ;
+
   justify-content: center;
   flex-direction: column;
-  position: relative;
-  isolation: isolate;
- 
- 
+  color: #efefef;
 
   h1 {
     font-size: 50px;
@@ -21,14 +21,17 @@
   h5 {
     margin-top: 20px;
   }
- 
- 
- 
-.fa {
-  color:  #00a09c;
-  z-index: -1;
- position: absolute;
-  font-size: 60px;
-}
- 
+ }
+
+
+
+  .fa {
+    color: #00a09c;
+    z-index: -1;
+    position: absolute;
+    font-size: 60px;
+  }
+  // img{
+
+  // }
 }

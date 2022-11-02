@@ -6,10 +6,10 @@
   
 }
 body {
+
   direction: rtl;
-  min-height: 100vh;
   font-family: "Cairo", sans-serif;
-  overflow-x: hidden;
+  
 }
 
 li {
@@ -21,6 +21,7 @@ a {
 }
 img {
   width: 100%;
+  vertical-align:middle;
 }
 .App{
   background:  hsl(0, 0%, 100%);

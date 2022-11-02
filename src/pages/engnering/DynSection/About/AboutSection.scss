@@ -1,0 +1,52 @@
+
+ .about-collage{
+  /* height: 100%; */
+
+  padding: 50px 30px;
+
+ }
+ .about-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr ));
+  gap: 4rem;
+  
+
+ }
+ .caption{
+ 
+ }
+ .gallery{
+ /* width:  400px; */
+ }
+.about-collage .titleabout {
+  /* color: #ffe45e; */
+  color: #f8d523;
+  // font-size: ;
+  margin-bottom: 10px;
+}
+.about-collage .parag {
+  color: #efefef;
+  font-weight:lighter;
+  font-size: 14px;
+}
+.read-more
+{
+  display: flex;
+  background: #ffbb01;
+  border-radius: 12px;
+  color: #000;
+  /* width: 300px; */
+  font-size: 16px;
+  /* height: 48px; */
+  margin-top: 40px;
+  padding:6px 11px;
+  width: fit-content;
+  align-items: center;
+  
+  text-align: center;
+  i{
+    padding-right: 10px;
+
+
+  }
+}
