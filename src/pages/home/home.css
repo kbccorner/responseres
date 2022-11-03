@@ -14,7 +14,7 @@
 }
 
 .main-city {
-  background-image: url(/public/city.svg);
+  background-image: url(/city.svg);
   background-position: bottom;
   background-repeat: repeat-x;
   bottom: -7px;
@@ -26,7 +26,7 @@
   overflow: hidden;
 }
 .main-city-back {
-  background-image: url(/public/city-back.svg);
+  background-image: url(/city-back.svg);
   background-repeat: repeat-x;
   position: absolute;
   bottom: -8px;
@@ -36,7 +36,7 @@
   right: -10px;
 }
 .clod1 {
-  background-image: url(/public/cloud.svg);
+  background-image: url(/cloud.svg);
   background-repeat: no-repeat;
   background-size: contain;
   height: 56px;
@@ -48,7 +48,7 @@
   width: 140px;
 }
 .clod2 {
-  background-image: url(/public/cloud.svg);
+  background-image: url(/cloud.svg);
   background-repeat: no-repeat;
   background-size: contain;
   height: 56px;

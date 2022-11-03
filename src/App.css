@@ -5,13 +5,32 @@
   box-sizing: border-box;
   
 }
+
 body {
 
   direction: rtl;
   font-family: "Cairo", sans-serif;
   
 }
+body::-webkit-scrollbar {
+  width: 5px;
+ 
+}
 
+/* Track */
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #0caba0;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 li {
   list-style: none;
 }
