@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import "./home.css";
 import datalist from "../../components/shared/Dropdown/Dropdata";
 import { Link } from "react-router-dom";
+import articleimg from "@@/image/articls.svg"
 import { useState ,useEffect } from 'react';
 function Home() {
  
@@ -15,7 +16,7 @@ function Home() {
        >
         <div className="main-title">
           <div className="knowlege">
-            {" "}
+        
             knowlege bace <br />
             corner
           </div>
@@ -123,7 +124,7 @@ function Home() {
 
        </div>
        <div className="pictuers">
-        <img src="/articls.svg" alt="articals"/>
+        <img src={articleimg} alt="articals"/>
 
        </div>
        

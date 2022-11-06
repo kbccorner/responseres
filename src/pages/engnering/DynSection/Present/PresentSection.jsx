@@ -9,13 +9,13 @@ function PresentSection() {
       ghgh.current.style.display="block";
       ghgh.current.requestFullscreen();
   }
-  return (
+  return ( 
     <section className="man-present">
       <div className="pres-counntiners">
         <div className="pres ">
           <div className="pres-txt">
             النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد
-            من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+            من النصوص الأخرى إضافة إلى <br/>زيادة عدد الحروف التى يولدها التطبيق.
           </div>
           <div className="pres-ved">
             <img src={vidioframe} alt="vidio"/>

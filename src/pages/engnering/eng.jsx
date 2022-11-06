@@ -5,7 +5,7 @@ import WelcomeSection from "./DynSection/Welcome/WelcomeSection";
 import Blogsection from "./DynSection/Blog/blogsection";
 import PageData from "./PageData.js";
  import './eng.scss';
-
+ 
 function Eng() {
   const CollageName = useParams();
    const datas=PageData[CollageName.collage];
