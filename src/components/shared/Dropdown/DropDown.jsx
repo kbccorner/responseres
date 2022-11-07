@@ -43,7 +43,7 @@ function DropDown(prop) {
             <ul className="dropdown-menu">
               {list.map((la) => {
                 return (
-                  <li key={la.name}>
+                  <li className="d-li" key={la.name}>
                     <Link onClick={()=>setToggle(-1)} className="dropdown-item" to={route + la.to}>
                       <i className="fa fa-archway icon"></i>
                       <div>

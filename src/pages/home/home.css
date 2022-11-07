@@ -14,7 +14,7 @@
 }
 
 .main-city {
-  background-image: url(/city.svg);
+  background-image: url("@@/image/city.svg");
   background-position: bottom;
   background-repeat: repeat-x;
   bottom: -7px;
@@ -26,7 +26,7 @@
   overflow: hidden;
 }
 .main-city-back {
-  background-image: url(/city-back.svg);
+  background-image: url("@@/image/city-back.svg");
   background-repeat: repeat-x;
   position: absolute;
   bottom: -8px;
@@ -36,7 +36,7 @@
   right: -10px;
 }
 .clod1 {
-  background-image: url(/cloud.svg);
+  background-image: url("@@/image/cloud.svg");
   background-repeat: no-repeat;
   background-size: contain;
   height: 56px;
@@ -48,7 +48,7 @@
   width: 140px;
 }
 .clod2 {
-  background-image: url(/cloud.svg);
+  background-image: url('@@/image/cloud.svg');
   background-repeat: no-repeat;
   background-size: contain;
   height: 56px;
@@ -84,7 +84,7 @@
 
 .coleghome {
   
-  background :  url("/party.svg") no-repeat bottom,#fff;
+  background :  url("@@/image/party.svg") no-repeat bottom,#fff;
   background-size: 100%;
   /* text-align: center; */
 
@@ -152,7 +152,7 @@
   position: relative;
 }
 .contry {
-  background-image: url(/country.svg);
+  background-image: url("@@/image/country.svg");
   position: absolute;
 
   background-position-x: left;

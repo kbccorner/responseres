@@ -24,20 +24,7 @@
 
     display: flex;
     align-items: center;
-    .mySwiper {
-      padding-bottom: 20px;
-    }
-    .swiper-horizontal > .swiper-pagination-bullets,
-    .swiper-pagination-bullets.swiper-pagination-horizontal,
-    .swiper-pagination-custom,
-    .swiper-pagination-fraction {
-      bottom: 0px;
-    }
-    .swiper-slide {
-      @media screen and (min-width: 768px) {
-        margin-top: 20px;
-      }
-    }
+  
   }
 
   .read-more {

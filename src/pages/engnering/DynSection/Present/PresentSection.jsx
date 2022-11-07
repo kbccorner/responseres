@@ -2,13 +2,9 @@ import { useRef } from "react";
 import "./PresentSection.scss";
 import v1 from "@/assets/Engineering/It/video.mp4";
 import pls from "@/assets/Engineering/It/cover.png";
-import vidioframe from "@/assets/Engineering/It/time-machine-playback.svg"
+import noac from "@/assets/Engineering/It/no-amico.svg"
 function PresentSection() {
-  const ghgh=useRef();
-  const handelvidio=()=>{
-      ghgh.current.style.display="block";
-      ghgh.current.requestFullscreen();
-  }
+ 
   return ( 
     <section className="man-present">
       <div className="pres-counntiners">
@@ -18,12 +14,8 @@ function PresentSection() {
             من النصوص الأخرى إضافة إلى <br/>زيادة عدد الحروف التى يولدها التطبيق.
           </div>
           <div className="pres-ved">
-            <img src={vidioframe} alt="vidio"/>
-            <div className="black-screen" onClick={handelvidio}>
-            <i className="far fa-play-circle"></i>
-
-            </div>
-            <video placeholder={pls} src={v1}  ref={ghgh}></video>
+            <img   src={noac} alt="vidio"/>
+            
           </div>
         </div>
       </div>

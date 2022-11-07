@@ -30,41 +30,8 @@ function AboutSection() {
           </div>
         </div>
         <div className="gallery">
-          <Swiper
-            dir="rtl"
-            modules={[EffectCreative, Pagination]}
-            grabCursor={true}
-            slidesPerView={1}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            spaceBetween={30}
-            effect={"creative"}
-            creativeEffect={{
-              prev: {
-                shadow: true,
-                translate: [0, 0, 400],
-              },
-              next: {
-                translate: ["100%", 0, 0],
-              },
-            }}
-            pagination={{ clickable: true }}
-            className="mySwiper"
-          >
-            <SwiperSlide>
-              <img src={g1} alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={g2} alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={g1} alt="" />
-            </SwiperSlide>
-          </Swiper>
-          {/* <button type="button">i.fa.fa-</button>
-          <button type="button"></button> */}
+       
+      
         </div>
       </div>
     </div>

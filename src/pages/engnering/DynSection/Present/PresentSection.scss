@@ -1,6 +1,10 @@
 .man-present {
   background: #eef2f7;
-
+.pres{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem;
+}
   .pres-counntiners {
     position: relative;
     padding: 50px 25px;
@@ -16,9 +20,7 @@
 .pres-ved {
   padding: 0px 50px;
 
-  video {
-    display: none;
-  }
+  
 }
 
 .black-screen {

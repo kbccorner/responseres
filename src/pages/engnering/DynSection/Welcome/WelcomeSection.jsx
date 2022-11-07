@@ -1,4 +1,4 @@
-import bg from "@/assets/Engineering/It/itee.svg";
+import bg from "@/assets/Engineering/It/rer.svg";
 
 function WelcomeSection({ title, desc }) {
   return (
