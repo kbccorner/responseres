@@ -10,10 +10,9 @@ body {
   font-family: "Cairo", sans-serif;
 }
 body::-webkit-scrollbar {
-  width: 5px;
+  width: 4px;
 }
 
-/* Track */
 body::-webkit-scrollbar-track {
   background: transparent;
 }

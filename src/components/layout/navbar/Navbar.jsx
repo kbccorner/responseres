@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
-import logo from "@@/image/logo-white.svg"
 import { Divide as Hamburger } from "hamburger-react";
 import DropDown from "../../shared/Dropdown/DropDown";
 import datalist from "../../shared/Dropdown/Dropdata.js";
@@ -13,7 +12,7 @@ function Navbar() {
   return (
     <nav className="navbar flex flex-items-center  ">
       <Link className="navbar-brand" to="/" onClick={()=>{setToggle(-1)}}>
-        <img src={logo} alt="logo"/>
+        <img src="/logo-white.svg" alt="logo"/>
       </Link>
       {isOpen && <div onClick={()=>setOpen(!isOpen)} className="navbar-overlay">
 
@@ -46,8 +45,8 @@ function Navbar() {
         })}
 
         <li className={`nav-item ${(toggle==111)&&'selected'}`}>
-          <Link className="nav-link active hover"  to="/about"  onClick={()=>{setToggle(111)}}>
-            حول الفريق
+          <Link className="nav-link active hover"  to="/help"  onClick={()=>{setToggle(111)}}>
+            دليل المستخدم 
           </Link>
         </li>
       </ul>

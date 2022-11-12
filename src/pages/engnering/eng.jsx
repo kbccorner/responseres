@@ -12,7 +12,7 @@ function Eng() {
   return (
     <main className={`eng ${CollageName.collage}`}>
        
-      <WelcomeSection title={datas.title} desc={datas.desc} />
+      <WelcomeSection title={datas.title} desc={datas.desc} font={datas.fonts} />
       <AboutSection  />
       
  

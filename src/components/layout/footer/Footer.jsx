@@ -7,10 +7,77 @@ import { TbBrandGithub } from "react-icons/tb";
 import { FiMail } from "react-icons/fi";
 const Footer = () => {
   return (
-    <section className="container"> 
-     
+    <section className="container">
+      {/* <div className="item">
+        <img src="/bg.png" />
+      </div> */}
       <div className="item">
- 
+        <div className="card">
+          <h1 className="title">الكليات</h1>
+          <p className="text">
+            <Link className="footer-brand" to="/">
+              كليات الهندسة
+            </Link>
+          </p>
+          <p className="text">
+            <Link className="footer-brand" to="/">
+              الكليات الطبية
+            </Link>
+          </p>
+          <p className="text">
+            <Link className="footer-brand" to="/">
+              المعاهد
+            </Link>
+          </p>
+          <p className="text">
+            <Link className="footer-brand" to="/">
+              الكليات الادبية
+            </Link>
+          </p>
+        </div>
+        <div className="card">
+          <h1 className="title">قاعدة المعرفة</h1>
+          <p className="text">
+            <Link className="footer-brand" to="/about">
+              الرؤية المستقبلية
+
+            </Link>
+          </p>
+          <p className="text">
+            <Link className="footer-brand" to="/help">
+              دليل المستخدم
+            </Link>
+          </p>
+          <p className="text">
+            <Link className="footer-brand" to="/">
+              حول المبادرة
+            </Link>
+          </p>
+          <p className="text">
+            <Link className="footer-brand" to="/dev">
+              حول الفريق
+            </Link>
+          </p>
+          <p className="text">
+            <Link className="footer-brand" to="/supp">
+              الداعمون
+            </Link>
+          </p>
+        </div>
+        <div className="card">
+          <h1 className="title">للتواصل</h1>
+          <p className="text">
+            <Link to="/">Email</Link>
+          </p>
+          <p className="text">
+            <Link to="/">phone</Link>
+          </p>
+        </div>
+
+        {/* <div className="item">
+              <img src="/bg.png" />
+            </div> */}
+
         <div className="card">
           <h1 className="title">الكليات</h1>
          
@@ -38,12 +105,13 @@ const Footer = () => {
         <div className="card">
           <h1 className="title">قاعدة المعرفة</h1>
           <p className="text">
-            <Link className="footer-brand" to="/">
-              الاسئلة الشائعة
+            <Link className="footer-brand" to="/about">
+              الرؤية المستقبلية
+
             </Link>
           </p>
           <p className="text">
-            <Link className="footer-brand" to="/">
+            <Link className="footer-brand" to="/help">
               دليل المستخدم
             </Link>
           </p>
@@ -76,7 +144,7 @@ const Footer = () => {
       <div className="item">
         <div className="continfo">
           <div className="logo">
-            <Link to="/home"> <img src="/logo-white.svg" alt="logo"/></Link>
+            <Link to="/"> <img src="/logo-white.svg" alt="logo"/></Link>
           </div>
           <div className="mail">
             

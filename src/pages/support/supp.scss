@@ -1,0 +1,59 @@
+
+.container-2
+{
+    display: flex;
+    flex-direction: column;
+    
+.mainsectionab
+{
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(90deg,#7ce8dd,#20c5ba);
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vesiontitle
+{
+   font-size: 44px;
+}
+
+.montans {
+    width: 100%;
+    // position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    // bottom: 0px;
+  }
+  .montans>img
+{
+    /* position: absolute; */
+    
+   
+    width: 60%;
+    height: 30%;
+    
+}
+.visionstext
+{
+    background-color: white;
+    color:#155a6d;
+    padding: 100px;
+}
+.visionstext>p
+{
+    padding-top: 20px;
+    font-size: 15px;
+}
+.visionstext>h1
+{
+    
+    font-size: 30px;
+}
+    
+}
+

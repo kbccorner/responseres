@@ -1,7 +1,7 @@
 const engarticals = [
     {
         mainphoto:'https://www.arvancloud.com/images/header/read-more/technical-conditions.png',
-        to:'/',
+        to:'/blogs/pargr1',
         type:'IT',
       title: " علم الحاسوب",
 
@@ -25,7 +25,7 @@ const engarticals = [
     },
     {
         mainphoto:'https://www.arvancloud.com/images/header/read-more/technical-conditions.png',
-        to:'/',
+        to:'/blogs/pargr2',
         type:'civel',
       title: "  بيتون",
       shortText:" ...البيتون شي حلو لازكم  نحمي ونطوره اكتر وبلا بلا بلا",
@@ -49,7 +49,7 @@ const engarticals = [
     },
     {
         mainphoto:'https://www.arvancloud.com/images/header/read-more/technical-conditions.png',
-        to:'/',
+        to:'/blogs/pargr3',
         type:'civel',
       title: "  ميكانيك",
       shortText:" ...البيتون شي حلو لازكم  نحمي ونطوره اكتر وبلا بلا بلا",

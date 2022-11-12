@@ -4,9 +4,12 @@ import "./App.css";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Eng from "./pages/engnering/Eng";
-
 import Help from "./pages/help/helpcenter";
 import Devlop from "./pages/dewvelpers/Devlop";
+import  Bloger from "./pages/blogs/blog";
+import Whate from "./pages/whate/whate";
+import Supp from "./pages/support/supp";
+
 
 function App() {
   return (
@@ -15,8 +18,18 @@ function App() {
         <Route path="/home">
           <Home />
         </Route>
+        <Route path="/supp">
+          <Supp />
+        </Route>
+        <Route path="/whate">
+          < Whate />
+        </Route>
+        
         <Route path="/eng/:collage">
           <Eng />
+        </Route>
+        <Route path="/blogs/:blog">
+          < Bloger />
         </Route>
         <Route path="/dev">
           <Devlop />
