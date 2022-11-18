@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./navbar.css";
+import "./navbar.scss";
 import { Divide as Hamburger } from "hamburger-react";
 import DropDown from "../../shared/Dropdown/DropDown";
 import datalist from "../../shared/Dropdown/Dropdata.js";
@@ -8,12 +8,14 @@ function Navbar() {
   const [isFoucs, setIsFoucs] = useState(false);
   const [toggle, setToggle] = useState(-1);
   const [isOpen, setOpen] = useState(false);
-
+  const respon=()=>{
+    setOpen(false)
+  }
   return (
     <nav className="navbar flex flex-items-center  ">
-      <Link className="navbar-brand" to="/" onClick={()=>{setToggle(-1)}}>
+      <a className="navbar-brand" href="/"  >
         <img src="/logo-white.svg" alt="logo"/>
-      </Link>
+      </a>
       {isOpen && <div onClick={()=>setOpen(!isOpen)} className="navbar-overlay">
 
       </div>}  
@@ -34,6 +36,7 @@ function Navbar() {
             <DropDown
               key={drop.title}
               id={index}
+              closenav={respon}
               route={drop.mroute}
               setToggle={setToggle}
               toggleId={toggle}

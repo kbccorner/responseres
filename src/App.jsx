@@ -1,7 +1,7 @@
 import { Route, Redirect } from "react-router-dom";
 import Layout from "./components/layout";
 import "./App.css";
-import Home from "./pages/home/Home";
+import Home from "./pages/Home/Home";
 import About from "./pages/about/About";
 import Eng from "./pages/engnering/Eng";
 import Help from "./pages/help/helpcenter";

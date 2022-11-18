@@ -6,10 +6,10 @@
   padding: 10px 40px;
   justify-content: space-between;
   position: fixed;
-  width: 100vw;
-  /* isolation: isolate; */
+  width: 100%;
+  
   font-size: smaller;
-}
+
 .hover:hover
 {
   color: #024b46;
@@ -33,14 +33,10 @@
 .navbar-toggler {
   display: none;
 }
-.navbar-brand
-{
-  max-width: 100px;
-  max-height: 40px;
-}
+ 
 .navbar-brand >img
 {
-  height: 45px;
+ width: 45px;
 }
 .navbar-nav {
   transition: left 350ms ease-in;
@@ -96,4 +92,5 @@
     font-size: 15px;
     
   }
+}
 }

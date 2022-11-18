@@ -18,29 +18,31 @@
   width: 100%;
   height: fit-content;
   position: absolute;
-  top: 60px;
+  top: 58px;
   left: 0px;
+ 
 }
 .dropdown-menu {
-  padding: 50px 0px;
+  padding: 50px  ;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
- gap: 2rem;
- 
+  align-items: flex-start;
+  gap: 2rem;   
 }
 .articals {
   padding: 50px 10%;
   flex: 3;
-  background-color: #053f3c;
+ 
   justify-content: flex-start;
 
   background-color: #eef2f7;
 }
 .dropdown-item {
   display: flex;
+  gap: 10px;
+  align-items: center;
 }
 .stats {
   font-size: xx-small;
@@ -73,7 +75,9 @@ i.chosen {
   font-size: xx-large;
   margin: 5px;
 }
-
+.image-icon {
+  width: 40px !important;
+}
 .blogs {
   background-color: #fff;
   border-radius: 8px;
@@ -95,7 +99,7 @@ i.chosen {
 .art-tit {
   display: flex;
   flex-direction: column;
- 
+
   justify-content: space-between;
   margin: 5px;
 }
@@ -108,7 +112,6 @@ i.chosen {
   box-shadow: 1px 16px 10px -12px rgba(0, 0, 0, 0.08);
   transform: translateY(-3px);
 }
-
 
 @media screen and (max-width: 930px) {
   .chosen {
@@ -132,7 +135,6 @@ i.chosen {
   }
   .d-li {
     width: 100%;
-    border: 1px solid #b7e1e0;
     text-align: center;
   }
   .dropdown-overlay {

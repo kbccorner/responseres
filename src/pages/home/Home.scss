@@ -1,14 +1,12 @@
-.container {
-  display: flex;
-  flex-direction: column;
+.home {
+  &_container {
+    padding-inline: 10px;
+  }
 }
-/* * {
-  outline: 1px solid red;
-} */
 .mainhome {
   width: 100%;
-  height: 97vh;
-  background-color: #20c5ba;
+  height: 100vh;
+  background-color: hsl(176, 72%, 45%);
   position: relative;
   overflow: hidden;
 }
@@ -25,6 +23,7 @@
   z-index: 1;
   overflow: hidden;
 }
+
 .main-city-back {
   background-image: url("@@/image/city-back.svg");
   background-repeat: repeat-x;
@@ -35,6 +34,7 @@
   opacity: 0.8;
   right: -10px;
 }
+
 .clod1 {
   background-image: url("@@/image/cloud.svg");
   background-repeat: no-repeat;
@@ -47,8 +47,9 @@
   transition: transform 20ms ease-in;
   width: 140px;
 }
+
 .clod2 {
-  background-image: url('@@/image/cloud.svg');
+  background-image: url("@@/image/cloud.svg");
   background-repeat: no-repeat;
   background-size: contain;
   height: 56px;
@@ -59,6 +60,7 @@
   transition: transform 20ms ease-in;
   width: 140px;
 }
+
 .main-title {
   display: flex;
   flex-direction: column;
@@ -73,39 +75,48 @@
 
   text-align: center;
 }
+
 .knowlege {
-  font-size: 90px;
-  text-shadow: rgb(28, 175, 165) 2.682767px -4.0581098px 0px;
-  line-height: 84px;
+  overflow: hidden;
+  h1 {
+    font-size: 90px;
+    text-shadow: rgb(28, 175, 165) 2.682767px -4.0581098px 0px;
+    line-height: 84px;
+    @media screen and (max-width: 500px) {
+      font-size: 50px;
+    }
+  }
 }
+
 .knowlege-des {
   font-size: 20px;
 }
 
-.coleghome {
-  
-  background :  url("@@/image/party.svg") no-repeat bottom,#fff;
-  background-size: 100%;
-  /* text-align: center; */
+.collages {
+  &_home {
+    background: url("@@/image/party.svg") no-repeat bottom, #fff;
+    position: relative;
+    width: 100%;
+    padding-bottom: 200px;
+  }
 
-  position: relative;
-  width: 100%;
-  padding-bottom: 200px;
-  
+  &_major {
+    padding: 100px 30px;
+  }
 
+  &_title {
+    text-align: center;
+    font-size: 25px;
+    color: hsl(176, 72%, 15%);
+  }
+  &_cards {
+    margin-top: 100px;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
 }
-.container-major {
-  padding: 50px 30px;
-}
-.coleg-tit {
-  padding: 5px;
-  width: 100%;
-  font-size: 21px;
-  color: #00211f;
-  padding: 10px;
 
-  /* text-align: center; */
-}
 .partysvg {
   background-image: no-repeat;
   background-size: cover;
@@ -116,30 +127,7 @@
   /* position: absolute; */
   z-index: 1;
 }
-.colleg {
-  display: flex;
 
-  justify-content: space-around;
-}
-.colgdata {
-  color: #00211f;
-}
-.colTitle {
-  padding: 5px;
-
-  font-size: 15px;
-  color: #00211f;
-  border-bottom: 3px solid #00211f;
-}
-.collist {
-  padding: 2px;
-}
-.colitem {
-  transition: all 20ms ease-in;
-}
-.colitem:hover {
-  color: #4d5f5e69;
-}
 .anthersection {
   background-color: #e7ecf4;
   /* text-align: center; */
@@ -151,6 +139,7 @@
   height: 100vh;
   position: relative;
 }
+
 .contry {
   background-image: url("@@/image/country.svg");
   position: absolute;
@@ -164,6 +153,7 @@
   top: 0;
   left: 30px;
 }
+
 .uner {
   color: #00211f;
   padding: 4px;
@@ -171,6 +161,7 @@
   cursor: pointer;
   list-style: square;
 }
+
 .introhome {
   background-color: #0b3a42;
   /* text-align: center; */
@@ -179,12 +170,12 @@
   align-items: center;
 
   width: 100%;
-  height: 70vh;
 
   display: flex;
 
   justify-content: space-around;
 }
+
 .typing {
   flex: 2;
   display: flex;
@@ -192,25 +183,31 @@
   justify-content: center;
   align-items: center;
 }
+
 .pictuers {
   flex: 1;
   align-items: center;
 }
+
 .pictuers > img {
   max-width: 400px;
   width: 100%;
   /* height: 400px; */
 }
+
 .introtitle {
   padding: 20px;
   color: aqua;
   font-size: 28px;
 }
+
 .introtste {
   font-size: 16px;
-  text-align: center;
+  color: aqua;
+  max-width: 50ch;
   line-height: 45px;
 }
+
 .introlink {
   background: #ffbb01;
   border-radius: 12px;
@@ -222,21 +219,26 @@
   padding: 11px;
   text-align: center;
 }
+
 @media screen and (max-width: 920px) {
   .clod2 {
     right: -56px;
   }
+
   .clod1 {
     left: -56px;
   }
+
   .main-city-back {
     bottom: -47px;
   }
+
   .anthersection {
     height: 150vh;
   }
+
   .coleghome {
- padding-bottom: 100px;
+    padding-bottom: 100px;
   }
 
   .colleg {
@@ -244,16 +246,20 @@
     gap: 1.5rem;
     flex-direction: column;
   }
+
   .colTitle {
     border-bottom: none;
   }
+
   .introhome {
     height: fit-content;
   }
+
   .introtste {
     font-size: 10px;
     line-height: 25px;
   }
+
   .contry {
     background-position-x: center;
     background-position-y: bottom;
@@ -262,16 +268,16 @@
     height: 80%;
     bottom: 0;
   }
+
   .introhome {
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .knowlege {
-    font-size: 50px;
-  }
   .knowlege-des {
     font-size: 15px;
   }
 }
+
+ 

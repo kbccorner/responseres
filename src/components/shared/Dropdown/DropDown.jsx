@@ -1,15 +1,14 @@
- 
-import { Link    } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import engarticals from "@/db/engdb/engarticals";
-
 import "./dropdown.css";
 function DropDown(prop) {
  
+ const getSrc=(src)=>{
+  return `src/assets/image/${src}`;
+ }
  
- 
-  const { title, setToggle, list, route, toggleId, id, isOpen } = prop;
+  const { title, setToggle, list, route, toggleId, closenav, id, isOpen } = prop;
   const followChange = () => {
     toggleId === id ? setToggle(-1) : setToggle(id);
   };
@@ -41,11 +40,11 @@ function DropDown(prop) {
             className="dropdown-main"
           >
             <ul className="dropdown-menu">
-              {list.map((la) => {
+              {list.map(( la,index) => {
                 return (
                   <li className="d-li" key={la.name}>
-                    <Link onClick={()=>setToggle(-1)} className="dropdown-item" to={route + la.to}>
-                      <i className="fa fa-archway icon"></i>
+                    <Link onClick={()=>{setToggle(-1);closenav();}} className="dropdown-item" to={route + la.to}>
+                       <img className="image-icon" src={getSrc(`icons/as${index+1}.svg`)} alt="" />
                       <div>
                         <p>{la.name}</p>
                         <p className="stats">(حلب-دمشق-حمص-سوريا)</p>

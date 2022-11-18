@@ -1,49 +1,58 @@
 import { motion } from "framer-motion";
-import "./home.css";
+import "./Home.scss";
 import datalist from "../../components/shared/Dropdown/Dropdata";
 import { Link } from "react-router-dom";
 import articleimg from "@@/image/articls.svg";
-import { useState, useEffect } from "react";
+import Card from "../../components/shared/Card/Card";
+
 function Home() {
   return (
-    <div className="container">
-      <motion.div className="mainhome">
+    <div className="home">
+      <div className="mainhome home_container">
         <div className="main-title">
           <div className="knowlege">
-            knowlege bace <br />
-            corner
+            <motion.h1
+              initial={{ y: 200 }}
+              animate={{ y: 0 }}
+              transition={{
+                type: "spring",
+                delay: 0.8,
+                duration: 1.5,
+                bounce: 0,
+              }}
+            >
+              knowlege bace <br />
+              corner
+            </motion.h1>
           </div>
-          <div className="knowlege-des">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              type: "spring",
+              delay: 1.8,
+              duration: 1,
+              bounce: 0,
+            }}
+            className="knowlege-des"
+          >
             مبادرة تستهدف طلاب الجامعات من الاختصاصات كافة
-          </div>
+          </motion.div>
         </div>
         <div className="clod1"></div>
         <div className="clod2"></div>
         <div className="main-city"></div>
         <div className="main-city-back"></div>
-      </motion.div>
+      </div>
 
-      <section className="coleghome">
-        <div className="container-major">
-          <div className="coleg-tit">الاختصاصات</div>
-          <div className="colleg">
+      <section className="collages_home">
+        <div className="collages_major">
+          <div className="collages_title">
+            <h1>الاختصاصات</h1>
+          </div>
+          <div className="collages_cards">
             {datalist.map((la, index) => {
-              return (
-                <div className="colgdata" key={index}>
-                  <div className="colTitle">{la.title}</div>
-                  <div className="collist">
-                    {la.list.map((le, ind) => {
-                      return (
-                        <div key={ind}>
-                          <Link className="colitem" to={le.to}>
-                            {le.name}
-                          </Link>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              );
+              return <Card data={la} key={index}></Card>;
             })}
           </div>
         </div>

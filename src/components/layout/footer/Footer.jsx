@@ -11,7 +11,21 @@ const Footer = () => {
       {/* <div className="item">
         <img src="/bg.png" />
       </div> */}
+     
       <div className="item">
+        <div className="continfo">
+          <div className="logo">
+            <Link to="/"> <img src="/logo-white.svg" alt="logo"/></Link>
+          </div>
+          <div className="mail">
+            
+              <FiMail />
+              <Link to="/">
+              mmmmmol@gmail.com
+            </Link>
+          </div>
+        </div>
+        <div className="item">
         <div className="card">
           <h1 className="title">الكليات</h1>
           <p className="text">
@@ -141,19 +155,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="item">
-        <div className="continfo">
-          <div className="logo">
-            <Link to="/"> <img src="/logo-white.svg" alt="logo"/></Link>
-          </div>
-          <div className="mail">
-            
-              <FiMail />
-              <Link to="/">
-              mmmmmol@gmail.com
-            </Link>
-          </div>
-        </div>
         <div className="continfo">
           <Link to="/">
             <FiFacebook className="icons" />

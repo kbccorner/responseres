@@ -1,3 +1,2 @@
 # KBC
- //wellcome 
-//jj
+ knowlage base corner 
