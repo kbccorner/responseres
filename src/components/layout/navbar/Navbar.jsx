@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.scss";
 import { Divide as Hamburger } from "hamburger-react";
-import DropDown from "../../shared/Dropdown/DropDown";
-import datalist from "../../shared/Dropdown/Dropdata.js";
+import DropDown from "../Dropdown/DropDown";
+import datalist from "../Dropdown/Dropdata";
 function Navbar() {
   const [isFoucs, setIsFoucs] = useState(false);
   const [toggle, setToggle] = useState(-1);
@@ -13,7 +13,7 @@ function Navbar() {
   }
   return (
     <nav className="navbar flex flex-items-center  ">
-      <a className="navbar-brand" href="/"  >
+      <a className="navbar-brand" href="/"   >
         <img src="/logo-white.svg" alt="logo"/>
       </a>
       {isOpen && <div onClick={()=>setOpen(!isOpen)} className="navbar-overlay">
@@ -26,7 +26,7 @@ function Navbar() {
 
       <ul className={`navbar-nav ${isOpen && "active"} flex flex-items-center`}>
         <li className={`nav-item ${toggle===222&&'selected'}`}>
-          <Link className={`nav-link active hover `} to="/"  onClick={()=>{setToggle(222)}}>
+          <Link className={`nav-link active hover `} to="/"  onClick={()=>{setToggle(222);setOpen(!isOpen)}}>
             الصفحة الرئيسية
           </Link>
         </li>
@@ -50,6 +50,11 @@ function Navbar() {
         <li className={`nav-item ${(toggle==111)&&'selected'}`}>
           <Link className="nav-link active hover"  to="/help"  onClick={()=>{setToggle(111)}}>
             دليل المستخدم 
+          </Link>
+        </li>
+        <li className={`nav-item ${(toggle==111)&&'selected'}`}>
+          <Link className="nav-link active hover"  to="/about"  onClick={()=>{setToggle(111)}}>
+           حول الفريق
           </Link>
         </li>
       </ul>

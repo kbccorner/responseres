@@ -3,12 +3,12 @@ import { AnimatePresence, motion } from "framer-motion";
 import engarticals from "@/db/engdb/engarticals";
 import "./dropdown.css";
 function DropDown(prop) {
- 
- const getSrc=(src)=>{
-  return `src/assets/image/${src}`;
- }
- 
-  const { title, setToggle, list, route, toggleId, closenav, id, isOpen } = prop;
+  const getSrc = (src) => {
+    return `src/assets/image/${src}`;
+  };
+
+  const { title, setToggle, list, route, toggleId, closenav, id, isOpen } =
+    prop;
   const followChange = () => {
     toggleId === id ? setToggle(-1) : setToggle(id);
   };
@@ -34,20 +34,29 @@ function DropDown(prop) {
             exit={{ scaleY: 0, transition: { duration: 0.5 } }}
             transition={{
               type: "easeInOut",
-
               duration: 0.5,
             }}
             className="dropdown-main"
           >
             <ul className="dropdown-menu">
-              {list.map(( la,index) => {
+              {list.map((la, index) => {
                 return (
                   <li className="d-li" key={la.name}>
-                    <Link onClick={()=>{setToggle(-1);closenav();}} className="dropdown-item" to={route + la.to}>
-                       <img className="image-icon" src={getSrc(`icons/as${index+1}.svg`)} alt="" />
+                    <Link
+                      onClick={() => {
+                        setToggle(-1);
+                        closenav();
+                      }}
+                      className="dropdown-item"
+                      to={route + la.to}
+                    >
+                      <img
+                        className="image-icon"
+                        src={getSrc(`icons/as${index + 1}.svg`)}
+                        alt=""
+                      />
                       <div>
                         <p>{la.name}</p>
-                        <p className="stats">(حلب-دمشق-حمص-سوريا)</p>
                       </div>
                     </Link>
                   </li>

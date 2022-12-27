@@ -1,37 +1,42 @@
 .about-collage {
-  background: #0b3a42;
-
-  padding: 0px 50px 30px;
+  padding: 100px 10%;
 
   .about-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 4rem;
     .title-about {
-      color: #f8d523;
+      color: #3bc5de;
 
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
     .parag {
-      color: #efefef;
-      font-weight: lighter;
+      color: #0b3a42;
+    
+
       font-size: 14px;
+      &::selection{
+        
+        background: #3bc5de;
+      }
     }
   }
   .gallery {
-    outline: 10px solid #efefef;
-    background: #efefef;
-
     display: flex;
     align-items: center;
-  
+    img {
+      outline: 10px solid #efefef;
+      box-shadow: 0px 2px 4px #000111;
+    }
   }
 
   .read-more {
     display: flex;
-    background: #ffbb01;
+    // background: #ffbb01;
+    background: hsl(189, 71%, 60%);
+
     border-radius: 8px;
-    color: #000;
+    color: #efefef;
 
     font-size: 13px;
     gap: 1rem;
@@ -42,6 +47,6 @@
     text-align: center;
   }
   @media screen and (max-width: 514px) {
-    padding: 0px 26px 30px;
+    padding: 60px 5%;
   }
 }

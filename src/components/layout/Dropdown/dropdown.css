@@ -16,7 +16,7 @@
   background: #eef2f7;
   color: #253343;
   width: 100%;
-  height: fit-content;
+  /* height: fit-content; */
   position: absolute;
   top: 58px;
   left: 0px;
@@ -25,9 +25,10 @@
 .dropdown-menu {
   padding: 50px  ;
   flex: 1;
-  display: flex;
+  display: flex;overflow: hidden;
+  overflow-y: auto;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 2rem;   
 }

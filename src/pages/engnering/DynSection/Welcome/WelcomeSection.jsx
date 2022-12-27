@@ -22,7 +22,7 @@ function WelcomeSection({ title, desc,font }) {
         ></i>
         <i className={font[3]} style={{ top: "70%", left: "80%" }}></i>
     
-          <img src={bg} alt="" />
+          
         
       </div>
  

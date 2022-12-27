@@ -1,21 +1,27 @@
 import { useRef } from "react";
 import "./PresentSection.scss";
-import v1 from "@/assets/Engineering/It/video.mp4";
-import pls from "@/assets/Engineering/It/cover.png";
-import noac from "@/assets/Engineering/It/no-amico.svg"
+import noac from "@/assets/Engineering/It/no-amico.svg";
+import avatarvideo from "@/assets/Engineering/It/videon.svg";
 function PresentSection() {
- 
-  return ( 
+  return (
     <section className="man-present">
       <div className="pres-counntiners">
         <div className="pres ">
-          <div className="pres-txt">
-            النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد
-            من النصوص الأخرى إضافة إلى <br/>زيادة عدد الحروف التى يولدها التطبيق.
+          <div className="pres-text">
+            <p>
+              
+              النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد
+              من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+            </p>
+            <button className="btn btn-watch" type="button">
+               شاهد الفيديو  <i class="fa fa-play-circle"></i> 
+            </button>
           </div>
+
           <div className="pres-ved">
-            <img   src={noac} alt="vidio"/>
-            
+            <div className="pres-container">
+              <img src={avatarvideo} alt="" />
+            </div>
           </div>
         </div>
       </div>

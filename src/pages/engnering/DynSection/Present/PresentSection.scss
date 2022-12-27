@@ -1,51 +1,43 @@
 .man-present {
   background: #eef2f7;
-.pres{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 4rem;
-}
+  // background: #3bc5de;
+ 
+  .pres {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+  }
   .pres-counntiners {
     position: relative;
     padding: 50px 25px;
 
-    .pres-txt {
-      text-align: center;
-      font-weight: bold;
+    .pres-text {
+     
+      // font-weight: bold;
       margin: 100px 0px;
+      .btn-watch{
+        display: flex;
+        align-items: center;
+        border: none;
+        background: hsl(189, 71%, 25%);
+        padding: 10px 15px;
+        font-family: inherit;
+        border-radius: 5px;
+        color: #fff;
+        i{
+          margin-right: 10px;
+          font-size: 20px;
+        }
+      }
     }
   }
 }
 
 .pres-ved {
   padding: 0px 50px;
-
-  
 }
 
-.black-screen {
-  background-color: black;
-  position: absolute;
-  width: 40vw;
-  height: 20vw;
-
-  left: 40%;
-  bottom: 16%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 60px;
-  cursor: pointer;
-
-  i {
-    color: white;
-    transition: all 0.3s ease;
-
-    &:hover {
-      text-shadow: 0px 0px 10px #ffffff;
-    }
-  }
-}
+ 
 
 @media (max-width: 992px) {
 }

@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
+ 
+
 import "./Card.scss";
 
-function Card({ data }) {
+function Card({title,route}) {
   return (
-    <Link to={data.mroute} className="collage_card_link">
-      <div className="collage_card_list"> </div>
+    <Link  to={route} className="collage_card_link">
+      <div  className="collage_card_icon">
+        
+      </div>
       <div className="collage_card_title">
-        <h1>{data.title}</h1>
+        <h1>{ title}</h1>
       </div>
     </Link>
   );

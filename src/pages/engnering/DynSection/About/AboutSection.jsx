@@ -14,9 +14,9 @@ function AboutSection() {
       <div className="about-container">
         <div className="caption">
           <h2 className="title-about">
-            <i className="fa-solid fa-lightbulb"></i> نبذة عن الكلية
+             نبذة عن الكلية
           </h2>
-
+ 
           <div className="parag">
             هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
             النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد
@@ -30,7 +30,7 @@ function AboutSection() {
           </div>
         </div>
         <div className="gallery">
-       
+       <img src={g1} alt="" />
       
         </div>
       </div>
